@@ -24,7 +24,7 @@ void ALab1GameMode::Tick(float DeltaSeconds)
 	AShootGameState* GS = GetGameState<AShootGameState>();
 	if(GS)
 	{
-		if(GS->Score > 1)
+		if(GS->Score >= 10)
 		{
 			OnVictory();
 		}
